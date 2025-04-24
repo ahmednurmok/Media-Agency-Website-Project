@@ -1,0 +1,77 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+
+.tile-image {
+  height: 200px;
+  float: left;
+  margin-right: 50px;
+}
+
+.card {
+  width: 45%;
+}
+/* both div images have the class 'title image' and 'card', this is to  adjust the image depending on the size of the screen. Thus web-responsive depending on the dvice */
+/* two elements with width: 45%, then:
+2 × 45% = 90%
+That leaves 10% for spacing, meaning both images can fit. */
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* different images flow to different sides when the screen is a certain size */
+@media (max-width: 680px) {
+  .logo {
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  
+  .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  .card img {
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline-block;
+    object-fit: cover;
+  }
+}
+/* Max-width indicates that the styles will apply for anything below and equal to 680. After that nothing will be applied. 
+max-width suitable to smaller devices
+regular css is suited to large evices*/
+
+.creative {
+  color:red;
+}
+
+/* <span> tags are elements used to uniquely identify parts of a document, e.g. a paragraph
+the */
